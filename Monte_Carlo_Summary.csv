@@ -1,0 +1,2 @@
+Initial Portfolio Value,Mean Terminal Value,Median Terminal Value,5th Percentile Value,95th Percentile Value,Monte Carlo VaR,Monte Carlo CVaR,Probability of Loss (%),Simulation Horizon,Number of Simulations
+1000000,1015398.5679885403,1012888.1880689351,907350.0316834825,1132290.0766835834,92649.96831651746,118592.0368875845,42.34,30,10000
