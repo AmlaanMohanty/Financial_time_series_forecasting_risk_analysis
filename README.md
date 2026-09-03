@@ -4,6 +4,34 @@ An end-to-end financial analytics project focused on the Indian equity market. T
 
 > This project is intended for educational and portfolio purposes only. It is not investment advice.
 
+## Dashboard Preview
+
+The completed Power BI report presents the analysis across four connected pages. A full static export is available in [`dashboard/Financial_Time_Series_Forecasting_and_Risk_Analysis.pdf`](dashboard/Financial_Time_Series_Forecasting_and_Risk_Analysis.pdf).
+
+### 1. Market Overview
+
+Interactive asset selection with price history, daily-return fluctuations, total return, CAGR, volatility, Sharpe ratio and maximum drawdown.
+
+![Market Overview dashboard](images/01_market_overview.png)
+
+### 2. Portfolio and Risk Analysis
+
+Equal-weight portfolio performance against NIFTY 50, portfolio allocation, one-day VaR/CVaR measures and a 10,000-path 30-day Monte Carlo simulation.
+
+![Portfolio and Risk dashboard](images/02_portfolio_risk.png)
+
+### 3. Forecasting and Model Comparison
+
+Side-by-side ARIMA and Prophet holdout evaluation, error comparison and a 30-business-day ARIMA forecast with a 95% confidence interval.
+
+![Forecasting and Model Comparison dashboard](images/03_forecasting_model_comparison.png)
+
+### 4. Regression and Correlation Analysis
+
+Selected-stock alpha, beta, R-squared and residual volatility, together with market-beta comparison, return correlations and an interactive regression scatter plot.
+
+![Regression and Correlation dashboard](images/04_regression_correlation.png)
+
 ## Executive Summary
 
 This project evaluates the performance and risk of five large-cap Indian stocks against NIFTY 50 using historical market data from January 2020 onwards. It combines exploratory analysis, portfolio construction, market regression, time-series forecasting and risk simulation in one reproducible workflow.
@@ -156,16 +184,32 @@ VaR is not a maximum-loss guarantee. Extreme market events can create losses bey
 ## Repository Structure
 
 ```text
-Financial-Time-Series-Forecasting-Risk-Analysis/
-├── notebook/
-│   └── Indian_Stock_Market_Forecasting_and_Risk_Analysis.ipynb
-├── data/
-│   ├── Indian_Financial_Time_Series_Dashboard_Data.xlsx
-│   └── CSV_Files/
-├── dashboard/                 # Added after Power BI development
-├── images/                    # Dashboard previews and project visuals
+Financial_time_series_forecasting_risk_analysis/
+├── Indian_Stock_Market_Forecasting_and_Risk_Analysis_ipynb.ipynb
+├── Indian_Financial_Time_Series_Dashboard_Data.xlsx
+├── Asset_Metrics.csv
+├── Correlations.csv
+├── Daily_Returns.csv
+├── Forecast_Evaluation.csv
+├── Future_Forecast.csv
+├── Historical_Prices.csv
+├── Model_Metrics.csv
+├── Monte_Carlo_Distribution.csv
+├── Monte_Carlo_Summary.csv
+├── Portfolio_Performance.csv
+├── Portfolio_Weights.csv
+├── Regression_Results.csv
+├── Risk_Summary.csv
+├── dashboard/
+│   └── Financial_Time_Series_Forecasting_and_Risk_Analysis.pdf
+├── images/
+│   ├── 01_market_overview.png
+│   ├── 02_portfolio_risk.png
+│   ├── 03_forecasting_model_comparison.png
+│   └── 04_regression_correlation.png
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
 ## Running the Project
@@ -183,7 +227,7 @@ Financial-Time-Series-Forecasting-Risk-Analysis/
 
 ## Power BI Dashboard
 
-The `data` directory contains the Excel workbook and CSV tables required for the Power BI dashboard. The completed `.pbix` file and dashboard preview will be added to the `dashboard` and `images` directories.
+The repository root contains the Excel workbook and CSV tables used by the Power BI model. The `dashboard` directory contains the complete four-page PDF export, and the `images` directory contains GitHub-ready previews of every report page. The interactive `.pbix` file can be included in the `dashboard` directory when distributing the editable report.
 
 ### Power BI Data Dictionary
 
